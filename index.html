@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Righteous&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!--       ========      log IN           ========== -->
+    <main id="signIn">
+      <div class="parent box-shadow m-auto">
+        <div class="container p-4 mt-5">
+          <h1 class="text-center mb-4">Smart Login System</h1>
+          <form action="">
+            <input
+            id="emailLog"
+              type="email"
+              class="form-control mb-3"
+              placeholder="Enter Your Email:"
+            />
+            <input
+            id="passLog"
+              type="password"
+              class="form-control mb-5"
+              placeholder="Enter Your Password:"
+            />
+          </form>
+          <p id="warningMess" class="text-danger text-center d-none">Incorrect Email And Password</p>
+          <button  id="loginBtn" class="btn btn-outline-info w-100">
+            Login
+          </button>
+          <p class="text-center text-white mt-4">
+            Don't have an account?
+            <a id="anchor1" class="text-white text-decoration-none">Sign Up</a>
+          </p>
+        </div>
+      </div>
+    </main>
+<!--                  ======    welcome       =======       -->
+    <section id="welcome" class="d-none">
+      <div class="nav box-shadow mb-3 p-3">
+        <div class="container">
+          <div class="header d-flex justify-content-between">
+            <h4 class="text-white">SMART Login</h4>
+            <button id="logOut" class="btn btn-outline-warning">Log out</button>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 text-center">
+        <div class="parent2 p-5 box-shadow">
+          <h1 id="para"></h1>
+        </div>
+      </div>
+    </section>
+<!--       ============     Sign up    =============      -->
+    <main id="signUp" class="parent box-shadow mt-5 m-auto p-3 d-none">
+      <div class="container">
+        <h1 class="text-center mb-4">Smart Login System</h1>
+        <form action="">
+          <input
+            type="text"
+            id="inputName"
+            class="form-control mb-3"
+            placeholder="Enter Your Name:"
+          />
+          <input
+            type="email"
+            id="inputEmail"
+            class="form-control mb-3"
+            placeholder="Enter Your Email:"
+          />
+          <input
+            type="password"
+            id="inputPass"
+            class="form-control mb-5"
+            placeholder="Enter Your Password:"
+          />
+        </form>
+        <p id="mess" class="text-success"></p>
+        <button id="btnSign" class="btn btn-outline-info w-100">Sign UP</button>
+        <p class="text-center text-white mt-4 ">
+          You have an account?<button id="anchor2" class="btn text-white">
+            <a class="text-white text-decoration-none">Log IN</a>
+          </button>
+        </p>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
